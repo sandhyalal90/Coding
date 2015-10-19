@@ -30,5 +30,19 @@ int main(){
     	pq_greater.pop();
     }
 
+    cout<<endl;
+    
+    priority_queue <int, vector<int>, greater<int> > pq_less;
+    pq_less.push(1);
+    pq_less.push(5);
+    pq_less.push(3);
+    pq_less.push(4);
+    pq_less.push(-1);
+
+    while(!pq_less.empty()){
+    	cout<<pq_less.top()<<endl;
+    	pq_less.pop();
+    }
+
 	return 0;
 }
