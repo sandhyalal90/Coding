@@ -44,6 +44,7 @@ void merge(int array[], int start, int mid, int end){
 }
 void merge_sort(int array[], int start, int end){
    
+   int inv_count = 0;
    if(start < end){
    int mid = (end-start)/2 + start;
    merge_sort(array, start, mid);
@@ -53,7 +54,7 @@ void merge_sort(int array[], int start, int end){
 }
 int main(){
 
-    int array[] = {1,3,12,4,5,7,14,12,18,2,4};
+    int array[] = {13, 12,11,10,9,8,7,6,5,4,3,2,1};
     int len = sizeof(array)/sizeof(int);
     merge_sort(array, 0, len-1);
     for(int i=0;i<len;i++)

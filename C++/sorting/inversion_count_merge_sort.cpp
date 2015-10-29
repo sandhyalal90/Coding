@@ -58,7 +58,7 @@ int merge_sort(int array[], int start, int end){
 }
 int main(){
 
-    int array[] = {1,3,2,0};
+    int array[] = {13, 12,11,10,9,8,7,6,5,4,3,2,1};
     int len = sizeof(array)/sizeof(int);
     int inv = merge_sort(array, 0, len-1);
     cout<<inv<<endl;
