@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-bool isConsecutiveSum(){
-
+bool isConsecutiveSum(int array[], int len, int target){
+  
 }
 int main(){
 
@@ -13,6 +13,5 @@ int main(){
     	cout<<"YES"<<endl;
     else
     	cout<<"NO"<<endl;
-    
 	return 0;
 }
