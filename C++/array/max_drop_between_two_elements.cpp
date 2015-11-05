@@ -13,9 +13,12 @@ int maxDrop(int arr[], int length){
     int bestDiff = -1;
     int max = arr[0];
     int currentDiff = -1;
+    //cout<<"Start !!"<<endl;
+    //cout<<" bestDiff = "<<bestDiff<<" max = "<<max<<" currentDiff = "<<currentDiff<<endl;
     
     for(int i = 0; i < length; i++){
         int val = arr[i];
+
         if(val > max){
             max = val;
             currentDiff = -1;
