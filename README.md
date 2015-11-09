@@ -20,3 +20,15 @@ PUZZLE
 DATABASE
 --------
 
+
+INTERVIEW 
+---------
+1. What is index? How it works in database ?
+2. Design Google calender using OOPS ?
+3. Find longest palindrome in a random string ?
+4. Given an array of integers (one digit, two digits, three digits and more),
+   write a program to find a string which represent the largest number, 
+   the digits of two digits or more should not be uses indivisualy.
+   ex : [9,9,98,67,66,7,7]
+   ans: 9998776766
+
