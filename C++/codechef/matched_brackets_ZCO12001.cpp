@@ -37,8 +37,11 @@ int main(){
     		stk.pop();
     		cmaxseq++;
     		if(stk.empty()){
-    			if(cmaxseq > maxseq)
-                maxseq = cmaxseq;
+    			if(cmaxseq > maxseq){
+                  maxseq = cmaxseq;
+                  firstseq = i-(2*maxseq)+2;    
+                }
+                
     			cmaxseq = 0;
     		}
     		continue;
@@ -47,7 +50,9 @@ int main(){
     		stk.push(array[i]);
     	}
     }
-    cout<<maxd<<" "<<firstd<<" "<<2*maxseq<<endl;
+    cout<<maxd<<" "<<firstd<<" "<<2*maxseq<<" "<<firstseq;
 
 	return 0;
 }
+
+// 1 1 1 2 1 2 2 2 1 1 2 1 2 1 1 1 2 2 2 1 2 1 2 2
