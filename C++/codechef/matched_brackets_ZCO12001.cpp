@@ -11,6 +11,7 @@ int main(){
 	cin>>array[i];
  
     int maxd, firstd, maxseq, firstseq;
+    int cmaxdepth = 0;
 
     stack <int> stk;
 
@@ -22,6 +23,10 @@ int main(){
     	}
     	else if(stk.top() == 1 && array[i] == 1){
             stk.push(array[i]);
+            if(stk.size() > cmaxdepth){
+            	cmaxdepth = stk.size();
+            	firstd = i+1;
+            }
             continue;
     	}
     	else if(stk.top() == 1 && array[i] == 2){
@@ -32,6 +37,7 @@ int main(){
     		stk.push(array[i]);
     	}
     }
+    cout<<cmaxdepth<<" "<<firstd<<endl;
 
 	return 0;
 }
