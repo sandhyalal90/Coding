@@ -10,8 +10,9 @@ int main(){
 	for(int i=0;i<N;i++)
 	cin>>array[i];
  
-    int maxd, firstd, maxseq, firstseq;
+    int maxd=0, firstd, maxseq=0, firstseq;
     int cmaxdepth = 0;
+    int cmaxseq = 0;
 
     stack <int> stk;
 
@@ -27,17 +28,26 @@ int main(){
             	cmaxdepth = stk.size();
             	firstd = i+1;
             }
+            if(cmaxdepth > maxd){
+            	maxd = cmaxdepth;
+            }
             continue;
     	}
     	else if(stk.top() == 1 && array[i] == 2){
     		stk.pop();
+    		cmaxseq++;
+    		if(stk.empty()){
+    			if(cmaxseq > maxseq)
+                maxseq = cmaxseq;
+    			cmaxseq = 0;
+    		}
     		continue;
     	}
-    	else if(stk.top() == 2){
+    	else {
     		stk.push(array[i]);
     	}
     }
-    cout<<cmaxdepth<<" "<<firstd<<endl;
+    cout<<maxd<<" "<<firstd<<" "<<2*maxseq<<endl;
 
 	return 0;
 }
