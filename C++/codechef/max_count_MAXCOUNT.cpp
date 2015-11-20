@@ -10,6 +10,7 @@ int main(){
   int A[10001];
   for(int i=0;i<10001;i++)
   A[i] = 0;
+
   int N;
   scanf("%d",&N);
   int K;
