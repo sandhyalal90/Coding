@@ -18,7 +18,7 @@ int longest_common_sub(string str1, string str2, int i, int j, int len1, int len
 int main(){
     
     string str1 = "ABCDEFGH";
-    string str2 = "abcdefgh";
+    string str2 = "abcdefgABDFC";
 
     int n = longest_common_sub(str1, str2, 0, 0, str1.length(), str2.length());
     cout<<n<<endl;
