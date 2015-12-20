@@ -10,7 +10,7 @@ int main(){
 
     int number2 = 32;
 
-    int *nptr2 = &number2;
+    int *nptr2 = &number2; 
 
     cout<<nptr2<<endl;
 
