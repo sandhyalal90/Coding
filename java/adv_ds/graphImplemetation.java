@@ -17,8 +17,18 @@ public abstract class Graph{
    public int getNumEdges(){
    	 return noEdges;
    }
+   public void addVertex(){
+      implementAddVertex();
+      noVertices++;
+   }
+   public addEdges(){
 
-   
+   }
+
+   public abstract List<Integer> getNeighbours(int v);
+   public abstract void implementAddVertex();
+   public abstract void implementAddEdges(int s, int d);
+
 }
 
 class graphImplementation{
