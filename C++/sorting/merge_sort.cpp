@@ -11,11 +11,11 @@ void merge(int array[], int start, int mid, int end){
 	for(int i=0;i<left;i++)
         L[i] = array[start+i];
 	for(int j=0;j<right;j++)
-		R[j] = array[mid+1+j];
+	R[j] = array[mid+1+j];
 
-    int i = 0;
-    int j = 0;
-    int k = start;
+        int i = 0;
+        int j = 0;
+        int k = start;
 
 	while(i < left && j < right){
 		if(L[i] <= R[j]){
