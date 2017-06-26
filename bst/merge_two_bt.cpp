@@ -34,6 +34,13 @@ void inorder(tnode *root){
 	}
 }
 
+
+void merge_two_trees(tnode *r1, tnode *r2){
+	if( r1 && r2 ){
+		
+	}
+}
+
 int main(){
 	tnode *root1 = NULL;
 	insert(root1, 5);
@@ -57,6 +64,9 @@ int main(){
 
 	inorder(root2);
 	cout<<"\n";
+
+	tnode *root3 = NULL;
+	merge_two_trees();
 
 	return 0;
 }
